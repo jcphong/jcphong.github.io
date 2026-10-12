@@ -3,34 +3,59 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>jcphong</title>
-  <meta name="description" content="GitHub profile and projects of jcphong">
+  <title>Phong Nguyen Hai</title>
+  <meta name="description" content="Senior AI/ML Engineer with 9 years of experience building production Agentic AI, LLM, generative AI, computer vision and eKYC systems.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230969da'/%3E%3Ctext x='32' y='42' font-family='Helvetica,Arial,sans-serif' font-size='28' font-weight='700' fill='white' text-anchor='middle'%3EPN%3C/text%3E%3C/svg%3E">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Phong Nguyen Hai · Senior AI/ML Engineer">
+  <meta property="og:description" content="Agentic AI, LLMs, generative AI, computer vision and eKYC. 9 years building production AI systems.">
+  <meta property="og:url" content="https://jcphong.github.io/">
+  <meta property="og:image" content="https://github.com/jcphong.png">
+  <meta name="twitter:card" content="summary">
   <style>
     :root {
       --bg: #f6f8fa; --card: #ffffff; --text: #1f2328; --muted: #59636e;
-      --border: #d1d9e0; --accent: #0969da;
+      --border: #d1d9e0; --accent: #0969da; --chip: #ddf4ff;
     }
     @media (prefers-color-scheme: dark) {
       :root {
         --bg: #0d1117; --card: #151b23; --text: #e6edf3; --muted: #9198a1;
-        --border: #3d444d; --accent: #4493f8;
+        --border: #3d444d; --accent: #4493f8; --chip: #121d2f;
       }
     }
     * { box-sizing: border-box; }
     body {
       margin: 0; background: var(--bg); color: var(--text);
-      font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
     }
     a { color: var(--accent); text-decoration: none; }
     a:hover { text-decoration: underline; }
     main { max-width: 960px; margin: 0 auto; padding: 48px 16px; }
-    header { display: flex; gap: 24px; align-items: center; flex-wrap: wrap; margin-bottom: 40px; }
+    section { margin-top: 40px; }
+    header { display: flex; gap: 24px; align-items: center; flex-wrap: wrap; }
     header img { width: 120px; height: 120px; border-radius: 50%; border: 1px solid var(--border); }
-    h1 { margin: 0; font-size: 2rem; }
-    .login { color: var(--muted); font-size: 1.15rem; }
-    .bio { margin: 8px 0; }
-    .meta { display: flex; gap: 16px; flex-wrap: wrap; color: var(--muted); font-size: .9rem; }
+    h1 { margin: 0; font-size: 2rem; line-height: 1.2; }
+    .headline { margin: 4px 0; font-size: 1.1rem; }
+    .location { color: var(--muted); font-size: .95rem; }
+    .links { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
+    .links a {
+      border: 1px solid var(--border); background: var(--card); border-radius: 6px;
+      padding: 4px 12px; font-size: .9rem; color: var(--text);
+    }
+    .links a:hover { border-color: var(--accent); text-decoration: none; }
     h2 { font-size: 1.25rem; border-bottom: 1px solid var(--border); padding-bottom: 8px; }
+    .about p { margin: 0 0 12px; }
+    .stack { display: grid; gap: 12px; }
+    .stack-row { display: grid; grid-template-columns: 160px 1fr; gap: 8px; align-items: start; }
+    .stack-row h3 { margin: 4px 0 0; font-size: .9rem; color: var(--muted); font-weight: 600; }
+    .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+    .chips span {
+      background: var(--chip); color: var(--accent); border-radius: 999px;
+      padding: 2px 10px; font-size: .85rem;
+    }
+    @media (max-width: 560px) { .stack-row { grid-template-columns: 1fr; } }
+    .stats { display: flex; flex-wrap: wrap; gap: 16px; }
+    .stats img { max-width: 100%; height: auto; }
     .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
     .repo {
       background: var(--card); border: 1px solid var(--border); border-radius: 8px;
@@ -38,19 +63,89 @@
     }
     .repo h3 { margin: 0; font-size: 1rem; word-break: break-word; }
     .repo p { margin: 0; color: var(--muted); font-size: .9rem; flex: 1; }
-    .repo .stats { display: flex; gap: 16px; color: var(--muted); font-size: .8rem; }
+    .repo .meta { display: flex; gap: 16px; color: var(--muted); font-size: .8rem; }
     .status { color: var(--muted); }
     footer { margin-top: 48px; color: var(--muted); font-size: .85rem; text-align: center; }
   </style>
 </head>
 <body>
   <main>
-    <header id="profile"><p class="status">Loading profile…</p></header>
+    <header>
+      <img src="https://github.com/jcphong.png" alt="Phong Nguyen Hai">
+      <div>
+        <h1>Phong Nguyen Hai</h1>
+        <p class="headline">Senior AI/ML Engineer · Agentic AI, LLMs &amp; Computer Vision</p>
+        <div class="location">📍 Ho Chi Minh City, Vietnam</div>
+        <nav class="links">
+          <a href="mailto:jcphong@gmail.com">✉️ Email</a>
+          <a href="https://www.linkedin.com/in/phong-nguyen-hai-53326816b/">LinkedIn</a>
+          <a href="https://github.com/jcphong">GitHub</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="about">
+      <h2>About</h2>
+      <p>
+        I'm a Senior AI/ML Engineer with 9 years of experience building and deploying production AI systems
+        across Agentic AI, LLMs, generative AI, computer vision and eKYC. I like turning applied research and
+        business requirements into reliable, high-impact products.
+      </p>
+      <p>
+        Today I'm a Senior AI Engineer at <strong>UNEY</strong> (Dubai, remote), building agentic workflows for a
+        private messenger app and identity-verification pipelines for the Vietnamese and Thai markets.
+        Before that I spent four years at <strong>Zalo AI Labs</strong> shipping conversational AI, generative imaging
+        and eKYC, and worked on face recognition at <strong>Motorola Solutions</strong> and computer vision at
+        <strong>AIOZ</strong>.
+      </p>
+      <p>
+        I hold a Master of Data Science from Ho Chi Minh City University of Technology and a Bachelor of
+        Computer Science from Ho Chi Minh City University of Science.
+      </p>
+    </section>
+
+    <section>
+      <h2>Tech stack</h2>
+      <div class="stack">
+        <div class="stack-row">
+          <h3>Agentic AI &amp; LLMs</h3>
+          <div class="chips"><span>LangGraph</span><span>LangChain</span><span>LlamaIndex</span><span>LangSmith</span><span>MCP</span><span>Agentic RAG</span><span>Vector databases</span><span>VLMs</span></div>
+        </div>
+        <div class="stack-row">
+          <h3>LLM serving</h3>
+          <div class="chips"><span>vLLM</span><span>TensorRT-LLM</span><span>Triton Inference Server</span><span>llama.cpp</span><span>Ollama</span></div>
+        </div>
+        <div class="stack-row">
+          <h3>ML &amp; inference</h3>
+          <div class="chips"><span>PyTorch</span><span>TensorFlow</span><span>TensorRT</span><span>TFLite</span><span>Core ML</span><span>Stable Diffusion</span></div>
+        </div>
+        <div class="stack-row">
+          <h3>MLOps &amp; infra</h3>
+          <div class="chips"><span>Docker</span><span>Kubernetes</span><span>Kafka</span><span>Argo CD</span><span>CI/CD</span><span>Linux</span></div>
+        </div>
+        <div class="stack-row">
+          <h3>Languages</h3>
+          <div class="chips"><span>Python</span><span>C++</span><span>Kotlin</span><span>Swift</span><span>Dart</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>GitHub stats</h2>
+      <div class="stats">
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jcphong&layout=compact&hide_border=true&bg_color=00000000&title_color=0969da&text_color=59636e"
+             alt="Top languages" loading="lazy" onerror="this.remove()">
+        <img src="https://streak-stats.demolab.com/?user=jcphong&hide_border=true&background=00000000&ring=0969da&fire=0969da&currStreakLabel=0969da"
+             alt="GitHub contribution streak" loading="lazy" onerror="this.remove()">
+      </div>
+    </section>
+
     <section>
       <h2>Repositories</h2>
       <div id="repos" class="grid"><p class="status">Loading repositories…</p></div>
     </section>
-    <footer>Data loaded live from the GitHub API.</footer>
+
+    <footer>© Phong Nguyen Hai · Repositories loaded live from the GitHub API.</footer>
   </main>
 
   <script>
@@ -58,50 +153,27 @@
     const esc = s => String(s ?? "").replace(/[&<>"']/g, c =>
       ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 
-    async function load() {
-      const profileEl = document.getElementById("profile");
-      const reposEl = document.getElementById("repos");
+    async function loadRepos() {
+      const el = document.getElementById("repos");
       try {
-        const [user, repos] = await Promise.all([
-          fetch(`https://api.github.com/users/${USER}`).then(r => r.ok ? r.json() : Promise.reject(r.status)),
-          fetch(`https://api.github.com/users/${USER}/repos?per_page=100&sort=updated`).then(r => r.ok ? r.json() : Promise.reject(r.status)),
-        ]);
-
-        document.title = user.name || user.login;
-        const blog = user.blog && (/^https?:\/\//.test(user.blog) ? user.blog : `https://${user.blog}`);
-        profileEl.innerHTML = `
-          <img src="${esc(user.avatar_url)}" alt="${esc(user.login)} avatar">
-          <div>
-            <h1>${esc(user.name || user.login)}</h1>
-            <div class="login"><a href="${esc(user.html_url)}">@${esc(user.login)}</a></div>
-            ${user.bio ? `<p class="bio">${esc(user.bio)}</p>` : ""}
-            <div class="meta">
-              ${user.location ? `<span>📍 ${esc(user.location)}</span>` : ""}
-              ${user.company ? `<span>🏢 ${esc(user.company)}</span>` : ""}
-              ${blog ? `<span>🔗 <a href="${esc(blog)}">${esc(user.blog)}</a></span>` : ""}
-              <span>👥 ${user.followers} followers · ${user.following} following</span>
-              <span>📦 ${user.public_repos} public repos</span>
-            </div>
-          </div>`;
-
-        const list = repos.filter(r => !r.fork);
-        reposEl.innerHTML = list.length ? list.map(r => `
+        const res = await fetch(`https://api.github.com/users/${USER}/repos?per_page=100&sort=updated`);
+        if (!res.ok) throw res.status;
+        const repos = (await res.json()).filter(r => !r.fork && !r.archived && r.name !== `${USER}.github.io`);
+        el.innerHTML = repos.length ? repos.map(r => `
           <article class="repo">
             <h3><a href="${esc(r.html_url)}">${esc(r.name)}</a></h3>
             <p>${esc(r.description || "No description")}</p>
-            <div class="stats">
+            <div class="meta">
               ${r.language ? `<span>${esc(r.language)}</span>` : ""}
               <span>★ ${r.stargazers_count}</span>
-              <span>⑂ ${r.forks_count}</span>
               <span>Updated ${new Date(r.pushed_at).toLocaleDateString()}</span>
             </div>
           </article>`).join("") : `<p class="status">No public repositories yet.</p>`;
       } catch (e) {
-        profileEl.innerHTML = `<h1>${USER}</h1><p class="status">Couldn't load profile (${esc(e)}). <a href="https://github.com/${USER}">View on GitHub</a>.</p>`;
-        reposEl.innerHTML = "";
+        el.innerHTML = `<p class="status">Couldn't load repositories. <a href="https://github.com/${USER}?tab=repositories">View them on GitHub</a>.</p>`;
       }
     }
-    load();
+    loadRepos();
   </script>
 </body>
 </html>
