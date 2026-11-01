@@ -3,89 +3,134 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Phong Nguyen Hai</title>
-  <meta name="description" content="AI/ML engineer building production systems across agentic AI, LLMs, computer vision and identity verification.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; connect-src https://api.github.com; base-uri 'self'; form-action 'none'">
+  <title>Phong Nguyen Hai · AI/ML Engineer · Agentic AI, LLMs &amp; Computer Vision</title>
+  <meta name="description" content="Phong Nguyen Hai is an AI/ML engineer building production systems across agentic AI, LLM serving, document AI and computer vision.">
+  <link rel="canonical" href="https://jcphong.github.io/">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f6f8fa" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0d1117" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230969da'/%3E%3Ctext x='32' y='42' font-family='Helvetica,Arial,sans-serif' font-size='28' font-weight='700' fill='white' text-anchor='middle'%3EPN%3C/text%3E%3C/svg%3E">
+  <link rel="me" href="https://github.com/jcphong">
+  <link rel="me" href="https://www.linkedin.com/in/phong-nguyen-hai-53326816b/">
+
   <meta property="og:type" content="profile">
-  <meta property="og:title" content="Phong Nguyen Hai · Senior AI/ML Engineer">
-  <meta property="og:description" content="Building production AI systems across agentic AI, LLMs, computer vision and identity verification.">
+  <meta property="og:site_name" content="Phong Nguyen Hai">
+  <meta property="og:title" content="Phong Nguyen Hai · AI/ML Engineer">
+  <meta property="og:description" content="Building production AI systems across agentic AI, LLM serving, document AI and computer vision.">
   <meta property="og:url" content="https://jcphong.github.io/">
-  <meta property="og:image" content="https://github.com/jcphong.png">
-  <meta name="twitter:card" content="summary">
+  <meta property="og:image" content="https://jcphong.github.io/assets/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Phong Nguyen Hai, AI/ML Engineer: Agentic AI, LLMs and Computer Vision">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Phong Nguyen Hai",
+    "alternateName": "Phong Nguyễn Hải",
+    "url": "https://jcphong.github.io/",
+    "image": "https://jcphong.github.io/assets/avatar.jpg",
+    "jobTitle": "Senior AI/ML Engineer",
+    "address": { "@type": "PostalAddress", "addressLocality": "Ho Chi Minh City", "addressCountry": "VN" },
+    "knowsAbout": ["Agentic AI", "Large language models", "LLM serving", "Retrieval-augmented generation", "Computer vision", "Biometrics", "OCR", "On-device AI", "MLOps"],
+    "sameAs": ["https://github.com/jcphong", "https://www.linkedin.com/in/phong-nguyen-hai-53326816b/"]
+  }
+  </script>
+
   <style>
     :root {
       --bg: #f6f8fa; --card: #ffffff; --text: #1f2328; --muted: #59636e;
-      --border: #d1d9e0; --accent: #0969da; --chip: #ddf4ff;
+      --border: #d1d9e0; --accent: #0969da; --accent-fg: #ffffff; --chip: #ddf4ff;
     }
     @media (prefers-color-scheme: dark) {
       :root {
         --bg: #0d1117; --card: #151b23; --text: #e6edf3; --muted: #9198a1;
-        --border: #3d444d; --accent: #4493f8; --chip: #121d2f;
+        --border: #3d444d; --accent: #4493f8; --accent-fg: #0d1117; --chip: #121d2f;
       }
     }
     * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
     body {
       margin: 0; background: var(--bg); color: var(--text);
       font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
     }
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    main { max-width: 960px; margin: 0 auto; padding: 48px 16px; }
-    section { margin-top: 40px; }
-    header { display: flex; gap: 24px; align-items: center; flex-wrap: wrap; }
-    header img { width: 120px; height: 120px; border-radius: 50%; border: 1px solid var(--border); }
+    a { color: var(--accent); text-underline-offset: 2px; }
+    a:hover { text-decoration-thickness: 2px; }
+    :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+    .skip { position: absolute; left: -9999px; top: 8px; background: var(--card); padding: 8px 12px; z-index: 1; }
+    .skip:focus { left: 8px; }
+    .wrap { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+    .site-header { padding-top: 48px; }
+    main section { margin-top: 48px; }
+    .hero { display: flex; gap: 24px; align-items: center; flex-wrap: wrap; }
+    .hero img { width: 120px; height: 120px; border-radius: 50%; border: 1px solid var(--border); }
     h1 { margin: 0; font-size: 2rem; line-height: 1.2; }
     .headline { margin: 4px 0; font-size: 1.1rem; }
-    .location { color: var(--muted); font-size: .95rem; }
-    .links { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
-    .links a {
-      border: 1px solid var(--border); background: var(--card); border-radius: 6px;
-      padding: 4px 12px; font-size: .9rem; color: var(--text);
+    .location { color: var(--muted); font-size: .95rem; margin: 0; }
+    .links { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; padding: 0; list-style: none; }
+    .btn {
+      display: inline-block; border: 1px solid var(--border); background: var(--card); border-radius: 6px;
+      padding: 6px 14px; font-size: .9rem; color: var(--text); text-decoration: none;
     }
-    .links a:hover { border-color: var(--accent); text-decoration: none; }
-    h2 { font-size: 1.25rem; border-bottom: 1px solid var(--border); padding-bottom: 8px; }
-    .about p { margin: 0 0 12px; }
+    .btn:hover { border-color: var(--accent); }
+    .btn.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-fg); font-weight: 600; }
+    h2 { font-size: 1.25rem; border-bottom: 1px solid var(--border); padding-bottom: 8px; margin: 0 0 16px; }
+    p { margin: 0 0 12px; }
+    .cards { display: grid; gap: 16px; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); padding: 0; margin: 0; list-style: none; }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 16px; }
+    .card h3 { margin: 0 0 6px; font-size: 1rem; }
+    .card p { margin: 0; color: var(--muted); font-size: .92rem; }
     .stack { display: grid; gap: 12px; }
-    .stack-row { display: grid; grid-template-columns: 160px 1fr; gap: 8px; align-items: start; }
+    .stack-row { display: grid; grid-template-columns: 180px 1fr; gap: 8px; align-items: start; }
     .stack-row h3 { margin: 4px 0 0; font-size: .9rem; color: var(--muted); font-weight: 600; }
-    .chips { display: flex; flex-wrap: wrap; gap: 6px; }
-    .chips span {
-      background: var(--chip); color: var(--accent); border-radius: 999px;
-      padding: 2px 10px; font-size: .85rem;
-    }
+    .chips { display: flex; flex-wrap: wrap; gap: 6px; padding: 0; margin: 0; list-style: none; }
+    .chips li { background: var(--chip); color: var(--accent); border-radius: 999px; padding: 2px 10px; font-size: .85rem; }
     @media (max-width: 560px) { .stack-row { grid-template-columns: 1fr; } }
-    .stats { display: flex; flex-wrap: wrap; gap: 16px; }
-    .stats img { max-width: 100%; height: auto; }
-    .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
-    .repo {
-      background: var(--card); border: 1px solid var(--border); border-radius: 8px;
-      padding: 16px; display: flex; flex-direction: column; gap: 8px;
+    .project { display: flex; flex-direction: column; gap: 8px; }
+    .project h3 a { text-decoration: none; }
+    .project h3 a:hover { text-decoration: underline; }
+    .project .meta { display: flex; gap: 12px; flex-wrap: wrap; color: var(--muted); font-size: .8rem; margin-top: auto; }
+    .badge { border: 1px solid var(--border); border-radius: 999px; padding: 0 8px; font-size: .75rem; color: var(--muted); }
+    .more { margin-top: 12px; font-size: .9rem; }
+    .contact { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 20px; }
+    .site-footer { margin: 48px auto; color: var(--muted); font-size: .85rem; text-align: center; }
+    @media print {
+      :root { --bg: #fff; --card: #fff; --text: #000; --muted: #333; --border: #bbb; --accent: #000; --chip: #fff; }
+      .skip, .links, #projects .more { display: none; }
+      main section { margin-top: 20px; break-inside: avoid; }
+      .site-header { padding-top: 0; }
+      a { text-decoration: none; }
+      .contact a[href^="mailto"]::after { content: " (" attr(href) ")"; }
+      .chips li { border: 1px solid #bbb; }
     }
-    .repo h3 { margin: 0; font-size: 1rem; word-break: break-word; }
-    .repo p { margin: 0; color: var(--muted); font-size: .9rem; flex: 1; }
-    .repo .meta { display: flex; gap: 16px; color: var(--muted); font-size: .8rem; }
-    .status { color: var(--muted); }
-    footer { margin-top: 48px; color: var(--muted); font-size: .85rem; text-align: center; }
   </style>
 </head>
 <body>
-  <main>
-    <header>
-      <img src="https://github.com/jcphong.png" alt="Phong Nguyen Hai">
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header wrap">
+    <div class="hero">
+      <img src="assets/avatar.jpg" alt="Portrait of Phong Nguyen Hai" width="120" height="120">
       <div>
         <h1>Phong Nguyen Hai</h1>
         <p class="headline">Senior AI/ML Engineer · Agentic AI, LLMs &amp; Computer Vision</p>
-        <div class="location">📍 Ho Chi Minh City, Vietnam</div>
-        <nav class="links">
-          <a href="mailto:jcphong@gmail.com">✉️ Email</a>
-          <a href="https://www.linkedin.com/in/phong-nguyen-hai-53326816b/">LinkedIn</a>
-          <a href="https://github.com/jcphong">GitHub</a>
-        </nav>
+        <p class="location"><span aria-hidden="true">📍 </span>Ho Chi Minh City, Vietnam</p>
+        <ul class="links">
+          <li><a class="btn primary" href="mailto:jcphong@gmail.com?subject=Hello%20from%20your%20website">Email me</a></li>
+          <li><a class="btn" href="https://www.linkedin.com/in/phong-nguyen-hai-53326816b/" rel="me">LinkedIn</a></li>
+          <li><a class="btn" href="https://github.com/jcphong" rel="me">GitHub</a></li>
+        </ul>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <section class="about">
-      <h2>About</h2>
+  <main id="main" class="wrap">
+    <section id="about" aria-labelledby="about-h">
+      <h2 id="about-h">About</h2>
       <p>
         I'm an AI/ML engineer who builds and ships production AI systems, from agentic workflows and LLM
         applications to computer vision and identity verification.
@@ -96,76 +141,136 @@
       </p>
     </section>
 
-    <section>
-      <h2>Tech stack</h2>
+    <section id="focus" aria-labelledby="focus-h">
+      <h2 id="focus-h">What I build</h2>
+      <ul class="cards">
+        <li class="card">
+          <h3>Production agents</h3>
+          <p>Agentic workflows with tool calling, model routing and human-in-the-loop, plus the evals, tracing and guardrails that keep them reliable.</p>
+        </li>
+        <li class="card">
+          <h3>Fast, efficient LLM serving</h3>
+          <p>Inference that is quick and affordable at scale: batching, caching, quantization and the right serving stack.</p>
+        </li>
+        <li class="card">
+          <h3>Document AI &amp; RAG</h3>
+          <p>Vision-language models that read PDFs, scans and forms, feeding hybrid retrieval and reranking for grounded answers.</p>
+        </li>
+        <li class="card">
+          <h3>Identity &amp; on-device AI</h3>
+          <p>Face recognition, liveness and OCR for identity verification, with lightweight models that run on phones.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="stack" aria-labelledby="stack-h">
+      <h2 id="stack-h">Tech stack</h2>
       <div class="stack">
         <div class="stack-row">
           <h3>Agentic AI &amp; LLMs</h3>
-          <div class="chips"><span>LangGraph</span><span>LangChain</span><span>LlamaIndex</span><span>LangSmith</span><span>MCP</span><span>Agentic RAG</span><span>Vector databases</span><span>VLMs</span></div>
+          <ul class="chips"><li>LangGraph</li> <li>LangChain</li> <li>LlamaIndex</li> <li>LangSmith</li> <li>MCP</li> <li>Agentic RAG</li> <li>Vector databases</li> <li>VLMs</li> <li>Evals &amp; guardrails</li></ul>
         </div>
         <div class="stack-row">
           <h3>LLM serving</h3>
-          <div class="chips"><span>vLLM</span><span>TensorRT-LLM</span><span>Triton Inference Server</span><span>llama.cpp</span><span>Ollama</span></div>
+          <ul class="chips"><li>vLLM</li> <li>TensorRT-LLM</li> <li>Triton Inference Server</li> <li>llama.cpp</li> <li>Ollama</li></ul>
         </div>
         <div class="stack-row">
-          <h3>ML &amp; inference</h3>
-          <div class="chips"><span>PyTorch</span><span>TensorFlow</span><span>TensorRT</span><span>TFLite</span><span>Core ML</span><span>Stable Diffusion</span></div>
+          <h3>Computer vision &amp; biometrics</h3>
+          <ul class="chips"><li>Face recognition</li> <li>Liveness detection</li> <li>OCR</li> <li>eKYC</li> <li>Stable Diffusion</li></ul>
+        </div>
+        <div class="stack-row">
+          <h3>ML &amp; on-device</h3>
+          <ul class="chips"><li>PyTorch</li> <li>TensorFlow</li> <li>TensorRT</li> <li>TFLite</li> <li>Core ML</li> <li>Flutter</li></ul>
         </div>
         <div class="stack-row">
           <h3>MLOps &amp; infra</h3>
-          <div class="chips"><span>Docker</span><span>Kubernetes</span><span>Kafka</span><span>Argo CD</span><span>CI/CD</span><span>Linux</span></div>
+          <ul class="chips"><li>Docker</li> <li>Kubernetes</li> <li>Kafka</li> <li>Argo CD</li> <li>CI/CD</li> <li>Linux</li></ul>
         </div>
         <div class="stack-row">
           <h3>Languages</h3>
-          <div class="chips"><span>Python</span><span>C++</span><span>Kotlin</span><span>Swift</span><span>Dart</span></div>
+          <ul class="chips"><li>Python</li> <li>C++</li> <li>Kotlin</li> <li>Swift</li> <li>Dart</li></ul>
         </div>
       </div>
     </section>
 
-    <section>
-      <h2>GitHub stats</h2>
-      <div class="stats">
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jcphong&layout=compact&hide_border=true&bg_color=00000000&title_color=0969da&text_color=59636e"
-             alt="Top languages" loading="lazy" onerror="this.remove()">
-        <img src="https://streak-stats.demolab.com/?user=jcphong&hide_border=true&background=00000000&ring=0969da&fire=0969da&currStreakLabel=0969da"
-             alt="GitHub contribution streak" loading="lazy" onerror="this.remove()">
+    <section id="projects" aria-labelledby="projects-h" hidden>
+      <h2 id="projects-h">Projects</h2>
+      <ul class="cards" id="project-list"></ul>
+      <p class="more"><a href="https://github.com/jcphong?tab=repositories">All repositories on GitHub →</a></p>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-h">
+      <h2 id="contact-h">Get in touch</h2>
+      <div class="contact">
+        <p>
+          I'm happy to talk about agents, LLM serving, document AI or production ML.
+          The quickest way to reach me is by email. CV available on request.
+        </p>
+        <a class="btn primary" href="mailto:jcphong@gmail.com?subject=Hello%20from%20your%20website">jcphong@gmail.com</a>
       </div>
     </section>
-
-    <section>
-      <h2>Repositories</h2>
-      <div id="repos" class="grid"><p class="status">Loading repositories…</p></div>
-    </section>
-
-    <footer>© Phong Nguyen Hai · Repositories loaded live from the GitHub API.</footer>
   </main>
 
-  <script>
-    const USER = "jcphong";
-    const esc = s => String(s ?? "").replace(/[&<>"']/g, c =>
-      ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  <footer class="site-footer wrap">© Phong Nguyen Hai</footer>
 
-    async function loadRepos() {
-      const el = document.getElementById("repos");
+  <script>
+    // Hand-picked projects, shown first. Example entry:
+    // { name: "vn-embedding-bench", url: "https://github.com/jcphong/vn-embedding-bench",
+    //   description: "Vietnamese embedding & reranker leaderboard", tags: ["RAG", "Vietnamese"],
+    //   status: "In progress", links: { "Demo": "https://huggingface.co/spaces/..." } }
+    const PROJECTS = [];
+
+    const USER = "jcphong";
+    const HIDDEN_REPOS = new Set([`${USER}.github.io`, USER]);
+    const section = document.getElementById("projects");
+    const list = document.getElementById("project-list");
+
+    function el(tag, props, children) {
+      const node = Object.assign(document.createElement(tag), props || {});
+      (children || []).forEach(c => c && node.append(c));
+      return node;
+    }
+
+    function card(p) {
+      const meta = el("div", { className: "meta" }, [
+        p.status && el("span", { className: "badge", textContent: p.status }),
+        ...(p.tags || []).map(t => el("span", { textContent: t })),
+        ...Object.entries(p.links || {}).map(([label, href]) => el("a", { href, textContent: label })),
+      ]);
+      return el("li", { className: "card project" }, [
+        el("h3", {}, [el("a", { href: p.url, textContent: p.name })]),
+        p.description && el("p", { textContent: p.description }),
+        meta,
+      ]);
+    }
+
+    async function liveRepos() {
+      const ctrl = new AbortController();
+      const timer = setTimeout(() => ctrl.abort(), 6000);
       try {
-        const res = await fetch(`https://api.github.com/users/${USER}/repos?per_page=100&sort=updated`);
-        if (!res.ok) throw res.status;
-        const repos = (await res.json()).filter(r => !r.fork && !r.archived && r.name !== `${USER}.github.io`);
-        el.innerHTML = repos.length ? repos.map(r => `
-          <article class="repo">
-            <h3><a href="${esc(r.html_url)}">${esc(r.name)}</a></h3>
-            <p>${esc(r.description || "No description")}</p>
-            <div class="meta">
-              ${r.language ? `<span>${esc(r.language)}</span>` : ""}
-              <span>★ ${r.stargazers_count}</span>
-              <span>Updated ${new Date(r.pushed_at).toLocaleDateString()}</span>
-            </div>
-          </article>`).join("") : `<p class="status">No public repositories yet.</p>`;
+        const res = await fetch(`https://api.github.com/users/${USER}/repos?per_page=100&sort=pushed`, { signal: ctrl.signal });
+        if (!res.ok) return [];
+        const data = await res.json();
+        return (Array.isArray(data) ? data : [])
+          .filter(r => !r.fork && !r.archived && !HIDDEN_REPOS.has(r.name))
+          .map(r => ({
+            name: r.name, url: r.html_url, description: r.description,
+            tags: [r.language, r.stargazers_count ? `★ ${r.stargazers_count}` : null].filter(Boolean),
+          }));
       } catch (e) {
-        el.innerHTML = `<p class="status">Couldn't load repositories. <a href="https://github.com/${USER}?tab=repositories">View them on GitHub</a>.</p>`;
+        return [];
+      } finally {
+        clearTimeout(timer);
       }
     }
-    loadRepos();
+
+    (async () => {
+      const curated = new Set(PROJECTS.map(p => p.name));
+      const items = PROJECTS.concat((await liveRepos()).filter(r => !curated.has(r.name)));
+      if (!items.length) return;
+      items.forEach(p => list.append(card(p)));
+      section.hidden = false;
+    })();
   </script>
 </body>
 </html>
